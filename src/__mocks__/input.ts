@@ -1,7 +1,4 @@
-export interface Input {
-  entryId: string;
-  path: string[];
-}
+import { Input } from "../interfaces/input";
 
 export const inputList: Input[] = [
   { entryId: "1", path: ["root1"] },
