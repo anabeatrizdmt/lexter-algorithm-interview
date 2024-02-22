@@ -1,38 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #16222C;
+  color: #FFFFFF;
+  padding: 20px;
+}
+
 .App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+}
+
+h1 {
+  margin-top: 20;
+  color: #9DEFBF;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.converter-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 650px;
+  background-color: #16222C;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.converter-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.converter-input,
+.converter-output {
+  width: 300px;
+  height: 400px;
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.converter-output {
+  background-color: #9DEFBF;
+  color: #16222C;
+}
+
+.converter-button {
+  background-color: #0C369E;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 680px) {
+  .converter-container {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .converter-section {
+    width: 90%;
+  }
+
+  .converter-input,
+  .converter-output {
+    width: 90%;
+    margin-bottom: 20px;
+    height: 200px;
+  }
+
+  .converter-button {
+    width: 90%;
   }
 }
