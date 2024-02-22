@@ -1,5 +1,3 @@
-import { inputList } from "./__mocks__/input";
-import { outputList } from "./__mocks__/output";
 import { Output } from "./interfaces/output";
 import { convertInputToOutput } from "./utils/inputToOutputConverter";
 import express, { Request, Response } from 'express';
