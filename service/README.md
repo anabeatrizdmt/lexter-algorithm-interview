@@ -21,7 +21,7 @@ git clone https://github.com/anabeatrizdmt/lexter-algorithm-interview
 
 2. Navigate to the `service` directory:
 ```
-cd folder-sorter/service
+cd service
 ```
 
 3. Install the required npm packages:
@@ -35,12 +35,6 @@ npm install
 npm start
 ```
 - By default, the server runs on http://localhost:3001, you can change the port in the file `index.ts`.
-
-### Running the Service
-- To start the service, run:
-```
-npm start
-```
 
 ## API Usage
 ### Converter Endpoint
